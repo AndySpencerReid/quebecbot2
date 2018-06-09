@@ -1,10 +1,4 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-var bot = new Discord.client();
-
-bot.on("ready", function() {
-bot.user.setGame("QuebecBot, !help");
-console.log("Le bot a bien ete connecte")
-});
-
-bot.login("process.env.TOKEN");
+bot.login(process.env.TOKEN)
